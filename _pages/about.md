@@ -7,7 +7,7 @@ subtitle: <a href='#'>
 profile:
   align: right
   image: IMG_8602.JPEG
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>5-248 Kenneth H. Keller Hall</p>
     <p>200 Union St SE</p>
