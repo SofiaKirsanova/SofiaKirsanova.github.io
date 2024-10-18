@@ -83,13 +83,32 @@
       "releaseDate": "2020-04-22"
     }
   ],
-  "work experience": [
+  "work": [
     {
-      "name": "Machine Learning Researcher",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Ph.D. Advisor | Associate Professor\nDepartment of Computer Science & Engineering<br>University of Minnesotas<br>612-625-4002, email: yaoyi@umn.edu"
+      "name": "Rotec Digital Solutions",
+      "position": "Machine Learning Researcher",
+      "startDate": "2023-09-26",
+      "endDate": "2024-04-18",
+      "summary": "Developing ML models for detecting anomalies in the operation of equipment, solving predictive maintenance problems and conducting research",
+      "highlights": ["Frameworks: PyTorch, scikit-learn, PostgreSQL, ClickHouse", "Platforms: MLflow, DVC, Airflow, Kedro, Prometheus, Cookiecutter, Grafana, Optuna", "Technical skills: Docker, Git, command line, Anaconda"]
+    },
+    {
+      "name": "MOLNET",
+      "position": "Full-stack Java Developer",
+      "startDate": "2022-04-01",
+      "endDate": "2023-04-04",
+      "summary": "Designing web systems from scratch providing complete production cycle from servlets to interfaces",
+      "highlights": ["Development Java, Spring Framework, JavaServer Pages (JSP), Maven, RESTful services/APIs, PostgreSQL", "User interfaces React, Bootstrap, TypeScript", "Technical skills Docker, Git, command line"]
+    },
+    {
+      "name": "JetBrains Academy,",
+      "position": "Freelance Writer",
+      "startDate": "2022-01-07",
+      "endDate": "2023-03-07",
+      "summary": "An author of maths and algorithmic topics for computer science courses",
+      "highlights": ["Areas: probability theory, statistics, data structures, algorithms"]
     }
-  ], 
+  ],
   "languages": [
     {
       "language": "Russian",
