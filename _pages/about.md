@@ -21,4 +21,4 @@ I am a first-year Ph.D. student in Computer Science at the [University of Minnes
 
 My research focuses on legend analysis from map images, involving both coarse and fine legend analysis. In the coarse component, I work on segmenting map content and legend areas, analyzing model performance across different map styles, and labeling maps with suboptimal styles. In the fine component, I am training a model to detect polygon legend items and developing methods for handling more complex legend layouts.
 
-I received a B.Sc. in Computer Science from Lomonosov Moscow State University. My major was in Computer Science and Software Engineering, and my thesis was titled 'Process Analytics Methods for Anomaly Detection Tasks in System Log Data'
+I received a B.Sc. in Computer Science from [Lomonosov Moscow State University](https://msu.ru/en/). My major was in Computer Science and Software Engineering, and my thesis was titled 'Process Analytics Methods for Anomaly Detection Tasks in System Log Data'

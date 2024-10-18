@@ -83,6 +83,13 @@
       "releaseDate": "2020-04-22"
     }
   ],
+  "work experience": [
+    {
+      "name": "Machine Learning Researcher",
+      "icon": "fa-solid fa-laptop",
+      "reference": "Ph.D. Advisor | Associate Professor\nDepartment of Computer Science & Engineering<br>University of Minnesotas<br>612-625-4002, email: yaoyi@umn.edu"
+    }
+  ], 
   "languages": [
     {
       "language": "Russian",
@@ -110,7 +117,7 @@
     {
       "name": "Dr. Yao-Yi Chiang",
       "icon": "fa-solid fa-laptop",
-      "reference": "Ph.D. Advisor\nAssociate Professor\nDepartment of Computer Science and Engineering\nUniversity of Minnesotas\n612-625-4002, email: yaoyi@umn.edu"
+      "reference": "Ph.D. Advisor | Associate Professor\nDepartment of Computer Science & Engineering<br>University of Minnesotas<br>612-625-4002, email: yaoyi@umn.edu"
     }
   ], 
   "conferences":[
