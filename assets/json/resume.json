@@ -20,13 +20,13 @@
   "projects": [
     {
       "name": "AI for map Geolocation and Extraction to find Critical Minerals (AIM)",
-      "summary": "sponsor: DARPA CriticalMAAS\nadvisor: Dr. Yao-Yi Chiang",
+      "summary": "sponsor: DARPA CriticalMAAS<br>advisor: Dr. Yao-Yi Chiang",
       "highlights": ["Conducting research aimed at segmenting map content and identifying legend areas to improve model performance across diverse map styles", "Analyzing and labeling maps, focusing on those with suboptimal styles for better legend representation", "Developing models to detect polygon legend items and advancing techniques for handling complex legend layouts to improve fine legend detection accuracy"],
       "startDate": "2024-09-10"
     },
     {
       "name": "HAYSTAC: Context-Aware Trajectory Anomaly Detection",
-      "summary": "sponsor: IARPA\nadvisor: Dr. Yao-Yi Chiang",
+      "summary": "sponsor: IARPA<br>advisor: Dr. Yao-Yi Chiang",
       "highlights": ["Contributed to the project aimed at establishing models of \"normal\" human movement across time, locations, and people to detect anomalous activities", "Assisted with the design and illustration of visual aids for the paper, supporting the research in anomaly detection models", "Participated in the refinement of a context-aware approach that incorporates elements such as subject identity and nearby points-of-interest (POI) for better trajectory anomaly detetion"],
       "startDate": "2024-08-26",
       "url": "https://onspatial.github.io/GeoAnomalies24/files/paper_2.pdf"
