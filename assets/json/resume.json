@@ -1,6 +1,7 @@
 {
   "basics": {
     "name": "Sofia Kirsanova",
+    "label": "Ph.D. student in Knowledge Computing Lab at the University of Minnesota",
     "email": "kirsa002@umn.edu",
     "location": {
       "address": "200 Union St SE",
@@ -102,7 +103,7 @@
     {
       "name": "Dr. Yao-Yi Chiang",
       "icon": "fa-solid fa-laptop",
-      "reference": "Ph.D. Advisor, Associate Professor\nDepartment of Computer Science and Engineering\nUniversity of Minnesotas\n612-625-4002, Email: yaoyi@umn.edu"
+      "reference": "Ph.D. Advisor, Associate Professor\nDepartment of Computer Science and Engineering<br>University of Minnesotas<br>612-625-4002, email: yaoyi@umn.edu"
     }
   ]
 }
