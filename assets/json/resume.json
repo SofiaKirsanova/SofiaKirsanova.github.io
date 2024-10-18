@@ -114,7 +114,7 @@
       "title": "TV NeuroTech hackathon. 1st prize",
       "date": "2022-02-27",
       "url": "https://it-events.com/en/events/22741",
-      "summary": "Case: to find, formalize and explore the statistical validity of the dependencies of indicators of the quality of life of the population (income, demography, credit burden, etc.) on the indicators of state resource provision.\nData: official statistics of the Russian Federation for the last 10-15 years\nMy task was to detect and clean outliers in the data."
+      "summary": "Case: to find, formalize and explore the statistical validity of the dependencies of indicators of the quality of life of the population (income, demography, credit burden, etc.) on the indicators of state resource provision<br>Data: official statistics of the Russian Federation for the last 10-15 years\nMy task was to detect and clean outliers in the data."
     }
   ],
   "languages": [
@@ -145,11 +145,6 @@
       "name": "Dr. Yao-Yi Chiang",
       "icon": "fa-solid fa-laptop",
       "reference": "Ph.D. Advisor | Associate Professor\nDepartment of Computer Science & Engineering<br>University of Minnesotas<br>612-625-4002, email: yaoyi@umn.edu"
-    }
-  ], 
-  "conferences":[
-    {
-      "name":"aaa"
     }
   ]
 }
