@@ -85,7 +85,7 @@
   ],
   "work": [
     {
-      "name": "Rotec Digital Solutions",
+      "name": "Rotec Digital Solutions, Moscow, Russia",
       "position": "Machine Learning Researcher",
       "startDate": "2023-09-26",
       "endDate": "2024-04-18",
@@ -93,7 +93,7 @@
       "highlights": ["Frameworks: PyTorch, scikit-learn, PostgreSQL, ClickHouse", "Platforms: MLflow, DVC, Airflow, Kedro, Prometheus, Cookiecutter, Grafana, Optuna", "Technical skills: Docker, Git, command line, Anaconda"]
     },
     {
-      "name": "MOLNET",
+      "name": "MOLNET, Moscow, Russia",
       "position": "Full-stack Java Developer",
       "startDate": "2022-04-01",
       "endDate": "2023-04-04",
@@ -101,7 +101,7 @@
       "highlights": ["Development Java, Spring Framework, JavaServer Pages (JSP), Maven, RESTful services/APIs, PostgreSQL", "User interfaces React, Bootstrap, TypeScript", "Technical skills Docker, Git, command line"]
     },
     {
-      "name": "JetBrains Academy,",
+      "name": "JetBrains Academy, remote",
       "position": "Freelance Writer",
       "startDate": "2022-01-07",
       "endDate": "2023-03-07",
