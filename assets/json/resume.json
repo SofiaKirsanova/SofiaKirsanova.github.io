@@ -1,8 +1,6 @@
 {
   "basics": {
     "name": "Sofia Kirsanova",
-    "label": "Ph. D. student at University of Minnesota",
-    "image": "",
     "email": "kirsa002@umn.edu",
     "location": {
       "address": "200 Union St SE",
@@ -19,15 +17,33 @@
       }
     ]
   },
-  "research expirience": [
+  "projects": [
     {
-      "name": "Knowledge Computing Lab, University of Minnesota",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "AI for map Geolocation and Extraction to find Critical Minerals (AIM)",
+      "summary": "sponsor: DARPA CriticalMAAS\nadvisor: Dr. Yao-Yi Chiang",
+      "highlights": ["Conducting research aimed at segmenting map content and identifying legend areas to improve model performance across diverse map styles", "Analyzing and labeling maps, focusing on those with suboptimal styles for better legend representation", "Developing models to detect polygon legend items and advancing techniques for handling complex legend layouts to improve fine legend detection accuracy"],
+      "startDate": "2024-09-10"
+    },
+    {
+      "name": "HAYSTAC: Context-Aware Trajectory Anomaly Detection",
+      "summary": "sponsor: IARPA\nadvisor: Dr. Yao-Yi Chiang",
+      "highlights": ["Contributed to the project aimed at establishing models of \"normal\" human movement across time, locations, and people to detect anomalous activities", "Assisted with the design and illustration of visual aids for the paper, supporting the research in anomaly detection models", "Participated in the refinement of a context-aware approach that incorporates elements such as subject identity and nearby points-of-interest (POI) for better trajectory anomaly detetion"],
+      "startDate": "2024-08-26",
+      "url": "https://onspatial.github.io/GeoAnomalies24/files/paper_2.pdf"
+    },
+    {
+      "name": "Methods for Detecting Critical Events in System Log Data",
+      "summary": "advisors: Oleg Gorokhov, Mikhail Petrovsky",
+      "highlights": ["Analyzed the core methods of event logs processing based on NLP techniques", "Developed preprocessing method for the raw log data based on natural texts preprocessing and detecting semantic information in logs", "Designed a CNN for detecting anomalies in clusters of log data", "Proposed a new approach of effective clustering for huge log files based on extraction sequences of events with process mining algorithms", "Achieved 98% accuracy on finding anomalies in preprocessed data and 82% within rawdata"],
+      "startDate": "2022-09-01",
+      "endDate":"2023-05-25"
+    },
+    {
+      "name": "Evaluation and Comparison of Algorithms for the Connect6 Game with Monte Carlo Method",
+      "summary": "advisor: Olga Oparina",
+      "highlights": ["Conducted a benchmark analysis between several classical heuristic algorithms which are used for evaluating stochastic processes", "Measured accuracy on considered methods and state Monte Carlo method as the best for providing solitions for Connect6 game"],
+      "startDate": "2019-10-01",
+      "endDate":"2020-04-24"
     }
   ],
   "education": [
@@ -86,7 +102,7 @@
     {
       "name": "Dr. Yao-Yi Chiang",
       "icon": "fa-solid fa-laptop",
-      "reference": "yaoyi@umn.edu"
+      "reference": "Ph.D. Advisor, Associate Professor\nDepartment of Computer Science and Engineering\nUniversity of Minnesotas\n612-625-4002, Email: yaoyi@umn.edu"
     }
   ]
 }
