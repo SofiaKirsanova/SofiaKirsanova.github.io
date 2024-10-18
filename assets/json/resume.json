@@ -72,8 +72,15 @@
   "publications": [
     {
       "name": "Context-Aware Trajectory Anomaly Detection",
-      "publisher": "The 32nd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL ’24)",
+      "publisher": "The 32nd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL'24)",
+      "url":"https://onspatial.github.io/GeoAnomalies24/files/paper_2.pdf",
       "releaseDate": "2024-09-30"
+    }, 
+    {
+      "name": "Evaluation and Comparison of Algorithms for the Connect6 Game with Monte Carlo Method",
+      "publisher": "Journal of the LXX Open international Student's Scientific Fair of Moscow Polytechnic University",
+      "url": "https://snto.mospolytech.ru/files/Sbornik_SNK_2020_fin.pdf",
+      "releaseDate": "2020-04-22"
     }
   ],
   "languages": [
@@ -103,7 +110,12 @@
     {
       "name": "Dr. Yao-Yi Chiang",
       "icon": "fa-solid fa-laptop",
-      "reference": "Ph.D. Advisor, Associate Professor\nDepartment of Computer Science and Engineering<br>University of Minnesotas<br>612-625-4002, email: yaoyi@umn.edu"
+      "reference": "Ph.D. Advisor\nAssociate Professor\nDepartment of Computer Science and Engineering\nUniversity of Minnesotas\n612-625-4002, email: yaoyi@umn.edu"
+    }
+  ], 
+  "conferences":[
+    {
+      "name":"aaa"
     }
   ]
 }
