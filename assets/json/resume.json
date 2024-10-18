@@ -52,7 +52,7 @@
       "institution": "University of Minnesota",
       "location": "Minnesota, USA",
       "area": "Computer Science",
-      "studyType": "PhD",
+      "studyType": "Ph.D.",
       "startDate": "2024-08-26",
       "score": "10",
       "courses": ["Key words of a future PhD thesis: spatiotemporal data prediction & forecasting, natural language processing, computer vision"]
@@ -61,7 +61,7 @@
       "institution": "Lomonosov Moscow State University",
       "location": "Moscow, Russia",
       "area": "Computer Science",
-      "studyType": "Bachelors",
+      "studyType": "B.Sc.",
       "startDate": "2019-09-01",
       "endDate": "2023-06-30",
       "score": "10",
@@ -113,9 +113,7 @@
       "title": "TV NeuroTech hackathon. 1st prize",
       "date": "2022-02-27",
       "url": "https://it-events.com/en/events/22741",
-      "summary": "Case: to find, formalize and explore the statistical validity of the dependencies of indicators of the quality of life of the population (income, demography, credit burden, etc.) on the indicators of state resource provision",
-      "summary": "Data: official statistics of the Russian Federation for the last 10-15 years\nMy task was to detect and clean outliers in the data."
-
+      "summary": "Case: to find, formalize and explore the statistical validity of the dependencies of indicators of the quality of life of the population (income, demography, credit burden, etc.) on the indicators of state resource provision | Data: official statistics of the Russian Federation for the last 10-15 years | My task was to detect and clean outliers in the data."
     }
   ],
   "languages": [
