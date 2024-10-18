@@ -98,7 +98,7 @@
       "startDate": "2022-04-01",
       "endDate": "2023-04-04",
       "summary": "Designing web systems from scratch providing complete production cycle from servlets to interfaces",
-      "highlights": ["Development Java, Spring Framework, JavaServer Pages (JSP), Maven, RESTful services/APIs, PostgreSQL", "User interfaces React, Bootstrap, TypeScript", "Technical skills Docker, Git, command line"]
+      "highlights": ["Development: Java, Spring Framework, JavaServer Pages (JSP), Maven, RESTful services/APIs, PostgreSQL", "User interfaces: React, Bootstrap, TypeScript", "Technical skills Docker, Git, command line"]
     },
     {
       "name": "JetBrains Academy, remote",
@@ -107,6 +107,14 @@
       "endDate": "2023-03-07",
       "summary": "An author of maths and algorithmic topics for computer science courses",
       "highlights": ["Areas: probability theory, statistics, data structures, algorithms"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "TV NeuroTech hackathon. 1st prize",
+      "date": "2022-02-27",
+      "url": "https://it-events.com/en/events/22741",
+      "summary": "Case: to find, formalize and explore the statistical validity of the dependencies of indicators of the quality of life of the population (income, demography, credit burden, etc.) on the indicators of state resource provision.\nData: official statistics of the Russian Federation for the last 10-15 years\nMy task was to detect and clean outliers in the data."
     }
   ],
   "languages": [
