@@ -82,6 +82,14 @@
       "releaseDate": "2020-04-22"
     }
   ],
+  "conferences": [
+  {
+    "name": "Methods for Detecting Critical Events in System Log Data",
+    "location": "Moscow, Russia",
+    "date": "2022",
+    "summary": "Tikhonov’s Readings Conference"
+    }
+],
   "work": [
     {
       "name": "Rotec Digital Solutions, Moscow, Russia",
