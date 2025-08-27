@@ -6,7 +6,7 @@ subtitle: <a href='#'>
 
 profile:
   align: right
-  image: IMG_8602.JPEG
+  image: 20250730_230113 (2) (1).jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>5-248 Kenneth H. Keller Hall</p>
