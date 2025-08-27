@@ -17,7 +17,7 @@ news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-I am a first-year Ph.D. student in Computer Science at the [University of Minnesota](https://twin-cities.umn.edu/), advised by [Prof. Yao-Yi Chiang](https://yaoyichi.github.io/). I am a member of the [Knowledge Computing Lab](https://knowledge-computing.github.io/). 
+I am a second-year Ph.D. student in Computer Science at the [University of Minnesota](https://twin-cities.umn.edu/), advised by [Prof. Yao-Yi Chiang](https://yaoyichi.github.io/). I am a member of the [Knowledge Computing Lab](https://knowledge-computing.github.io/). 
 
 My research focuses on legend analysis from map images, involving both coarse and fine legend analysis. In the coarse component, I work on segmenting map content and legend areas, analyzing model performance across different map styles, and labeling maps with suboptimal styles. In the fine component, I am training a model to detect polygon legend items and developing methods for handling more complex legend layouts.
 
