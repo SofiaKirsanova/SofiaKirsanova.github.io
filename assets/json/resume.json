@@ -37,14 +37,14 @@
       "summary": "advisors: Oleg Gorokhov, Mikhail Petrovsky",
       "highlights": ["Analyzed the core methods of event logs processing based on NLP techniques", "Developed preprocessing method for the raw log data based on natural texts preprocessing and detecting semantic information in logs", "Designed a CNN for detecting anomalies in clusters of log data", "Proposed a new approach of effective clustering for huge log files based on extraction sequences of events with process mining algorithms", "Achieved 98% accuracy on finding anomalies in preprocessed data and 82% within rawdata"],
       "startDate": "2022-09-01",
-      "endDate":"2023-05-25"
+      "endDate": "2023-05-25"
     },
     {
       "name": "Evaluation and Comparison of Algorithms for the Connect6 Game with Monte Carlo Method",
       "summary": "advisor: Olga Oparina",
       "highlights": ["Conducted a benchmark analysis between several classical heuristic algorithms which are used for evaluating stochastic processes", "Measured accuracy on considered methods and state Monte Carlo method as the best for providing solitions for Connect6 game"],
       "startDate": "2019-10-01",
-      "endDate":"2020-04-24"
+      "endDate": "2020-04-24"
     }
   ],
   "education": [
@@ -72,7 +72,7 @@
     {
       "name": "Context-Aware Trajectory Anomaly Detection",
       "publisher": "The 32nd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL'24)",
-      "url":"https://onspatial.github.io/GeoAnomalies24/files/paper_2.pdf",
+      "url": "https://onspatial.github.io/GeoAnomalies24/files/paper_2.pdf",
       "releaseDate": "2024-09-30"
     }, 
     {
@@ -83,13 +83,13 @@
     }
   ],
   "conferences": [
-  {
-    "name": "Methods for Detecting Critical Events in System Log Data",
-    "location": "Moscow, Russia",
-    "date": "2022",
-    "summary": "Tikhonov’s Readings Conference"
+    {
+      "name": "Methods for Detecting Critical Events in System Log Data",
+      "location": "Moscow, Russia",
+      "date": "2022",
+      "summary": "Tikhonov's Readings Conference"
     }
-],
+  ],
   "work": [
     {
       "name": "Rotec Digital Solutions, Moscow, Russia",
@@ -155,3 +155,4 @@
     }
   ]
 }
+
