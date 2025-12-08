@@ -1,32 +1,55 @@
 ---
 layout: page
-title: CriticalMAAS - Legend Detection & Map Layout Analysis
-description: DARPA-funded project on automated legend detection from historical maps
-img: 
-importance: 2
+title: CriticalMAAS – AI for Geological Map Geolocation & Feature Extraction
+description: DARPA/USGS project on automated georeferencing and feature extraction for critical mineral assessment
+img:
+importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-**Sponsor:** DARPA CriticalMAAS  
-**Advisor:** Dr. Yao-Yi Chiang  
-**Status:** Completed (2024-2025)
+**Sponsor:** U.S. Geological Survey / DARPA  
+**Performer:** InferLink Corporation, University of Minnesota, University of South California
+**Award ID:** 140D0423C0093  
+**Period:** 2023–2025  
+**Status:** completed  
 
 ## Overview
 
-CriticalMAAS (Critical Mineral Assessment with AI Support) was a collaborative effort between DARPA, USGS, ARPA-E, and other partners to develop machine-learning tools that accelerate time-consuming parts of USGS data interpretation and critical mineral assessments. The project aimed to reduce the critical mineral assessment workflow from years to days.
+Critical minerals are essential to modern technologies and the global economy. Geological maps contain valuable information about formations, faults, mineral deposits, and other subsurface indicators, but most exist only as scanned images that require time-consuming manual digitization.  
 
-As part of this effort, I developed automated methods for detecting and parsing legend information from historical maps, contributing to the DIGMAPPER map-digitization pipeline. This work was part of the first technical area: extracting geospatial data from maps and documents.
+CriticalMAAS aims to develop an automated pipeline to convert geological maps into analyzable digital layers, enabling large-scale mineral assessment. The project develops **AI-driven map geolocation, coordinate system inference, and feature extraction** methods, culminating in **AIM (AI for Maps)** — an end-to-end prototype system for automated processing of geological map imagery.
 
 ## Research Contributions
 
-- **Deep-learning methods for legend detection**: Developed methods for detecting legend symbols and text regions and linking them into structured legend items across diverse cartographic styles
-- **Multimodal approach**: Combined fine-tuned LayoutLMv3 with GPT-4o structured prompting for layout-aware legend parsing
-- **High accuracy results**: Achieved **96%** symbol-detection F1, **97.8%** text-detection F1, and **97.1%** symbol-description linking accuracy
+- **Automated map georeferencing:** Detecting map location, coordinate systems, and spatial alignment for maps without known geolocation
+- **Geological feature extraction:** Detecting and digitizing point, line, and polygon features such as mineral deposits, formations, faults, folds, and contacts
+- **Legend-aware feature interpretation:** Incorporating cartographic symbology and domain heuristics to improve recognition accuracy on diverse map styles
+- **Benchmark dataset development:** Creating labeled geological map datasets to support evaluation and training
+- **Scalable processing system:** Implementing a high-volume pipeline for real-world government and commercial use cases
+
+## Technical Approach
+
+Building on models developed for the DARPA/USGS **AI for Critical Mineral Assessment Competition (2022)**, the project extends machine learning methods for robust map processing. The work introduces:
+
+1. **Accurate feature extraction from diverse map styles**  
+   Enhancing previous detection frameworks and integrating cartographic reasoning to improve generalization across geological symbologies.
+
+2. **Automated georeferencing at scale**  
+   Algorithms for identifying geographic location, coordinate reference, and map orientation without manual intervention.
+
+3. **Scalable end-to-end system (AIM)**  
+   A processing engine capable of handling large volumes of historical and modern geological map scans.
+
+Challenges addressed include limited annotated training data, imbalanced feature distributions, and domain shift across heterogeneous map sources.
 
 ## Impact
 
-This work contributed to the DIGMAPPER system, a modular framework for automated geologic map digitization. The CriticalMAAS effort successfully demonstrated the ability to reduce critical mineral assessment workflows from years to just two and a half days, enabling large-scale processing of historical cartographic materials for USGS scientists.
+The outcome of CriticalMAAS reduced the need for manual map digitization and enabled rapid mineral assessment at national scale. AIM automates data extraction workflows, generating structured spatial layers useful for:
 
-**Reference:** [DARPA News: USGS, DARPA Collaborate To Accelerate Critical Mineral Assessment](https://www.darpa.mil/news/2025/usgs-ai-mineral-assessment)
+- critical mineral exploration
+- geological surveying and resource assessment
+- environmental and land-use analysis
+- government and commercial decision-making
 
+The system supports future integration with large-scale geological repositories, accelerating research and national resource planning.
