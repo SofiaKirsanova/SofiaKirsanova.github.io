@@ -10,7 +10,7 @@ related_publications: false
 
 **Sponsor:** National Science Foundation (NSF)  
 **Co-PIs:** Dr. Yao-Yi Chiang (UMN), Dr. Stefan Leyk (CU Boulder)  
-**Status:** Ongoing (2024–2027)
+**Status:** Ongoing (2024 -- 2027)
 
 ## Overview
 

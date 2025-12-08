@@ -11,7 +11,7 @@ related_publications: false
 **Sponsor:** U.S. Geological Survey / DARPA  
 **Performer:** InferLink Corporation, University of Minnesota, University of South California
 **Award ID:** 140D0423C0093  
-**Period:** 2023–2025  
+**Period:** 2023 -- 2025  
 **Status:** completed  
 
 ## Overview
