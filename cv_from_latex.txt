@@ -1,0 +1,193 @@
+%% start of file `template.tex'.
+\documentclass{resume}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\definecolor{MyBlue}{HTML}{1A0DAB}
+
+\newcommand{\ExternalLink}{%
+\textcolor{MyBlue}{
+    \tikz[x=1.8ex, y=1.8ex, baseline=-0.05ex]{
+        \begin{scope}[x=1.5ex, y=1.5ex]
+            \clip (-0.1,-0.1)--++(-0,1.2)--++(0.6,0)--++(0,-0.6)--++(0.6,0)--++(0,-1);
+            \path[draw,line width=0.5,rounded corners=0.5](0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw,line width=0.5](0.5,0.5)--(1,1);
+        \path[draw,line width=0.5](0.6,1)--(1,1)--(1,0.6);
+    }
+}}
+\hypersetup{colorlinks=true,urlcolor=MyBlue,linkcolor=black,citecolor=black}
+
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry}
+\name{Sofia Kirsanova}
+
+% make lists compact globally
+\setlist[itemize]{nosep,leftmargin=0.22in}
+\setlist[enumerate]{nosep,leftmargin=0.22in}
+
+\begin{document}
+
+\centerline{\scshape\Large PhD Student in Computer Science}
+\centerline{\scshape\Large University of Minnesota Twin Cities}
+
+\begin{center}
+\href{mailto:kirsa002@umn.edu}{\textcolor{MyBlue}{\underline{kirsa002@umn.edu}}} \quad
+\href{https://sofiakirsanova.github.io/}{\textcolor{MyBlue}{\underline{Website}}} \quad
+\href{https://www.linkedin.com/in/sofia-kirsanova/}{\textcolor{MyBlue}{\underline{LinkedIn}}} \quad
+Minneapolis, MN
+\end{center}
+
+
+%==================== EDUCATION ====================%
+\begin{rSection}{Education}
+
+{\bf Ph.D. in Computer Science}, University of Minnesota Twin Cities \hfill 2024--Present\\
+Department of Computer Science and Engineering, Knowledge Computing Lab\\
+Advisor: Prof.\ Yao-Yi Chiang\\
+\textit{Research interests: computer vision; document image analysis and layout understanding; multimodal deep learning}
+
+{\bf B.Sc. in Computer Science}, Lomonosov Moscow State University \hfill 2019--2023\\
+College of Computational Mathematics and Cybernetics\\
+Major: Computer Science and Software Engineering\\
+Thesis: \textit{Process Analytics Methods for Anomaly Detection Tasks in System Log Data}\\
+Advisors: Oleg Gorokhov, Mikhail Petrovsky
+
+\end{rSection}
+
+%==================== RESEARCH AREA ====================%
+\begin{rSection}{Research Area}
+\begin{center}
+\textbf{Computer Vision} \quad
+\textbf{Vision Transformers} \quad
+\textbf{Multimodal Models} \quad
+\textbf{Geospatial Deep Learning} \\
+\textbf{Layout Understanding} \quad
+\textbf{Automated Digitization} \quad
+\textbf{Line Extraction \& Topological Reconstruction}\\
+\end{center}
+\end{rSection}
+
+%==================== RESEARCH EXPERIENCE ====================%
+\begin{rSection}{Research Experience}
+
+{\bf Graduate Research Assistant}, \textit{Knowledge Computing Lab, University of Minnesota, USA} \hfill 2024--Present
+
+\textit{IMOLA (NSF). Automated Road Network Extraction \& Topological Mapping (ongoing)}  
+\begin{itemize}
+\item Develop deep-learning methods for extracting road networks from maps, with a focus on detecting road centerlines, intersections, bridges, and other linear transportation features across varying cartographic styles.
+\item Build algorithms for topology reconstruction, converting raw line predictions into routable graph structures with nodes and edges classification and connectivity correction.
+\item Design evaluation pipelines to assess extraction quality across large heterogeneous map collections with patch difficulty modeling, structured error attribution, and cross-region generalization metrics.
+\end{itemize}
+
+\textit{CriticalMAAS (DARPA). Legend Detection \& Map Layout Analysis (completed)}  
+\begin{itemize}
+\item Developed deep-learning methods for detecting legend symbols and text regions and linking them into structured legend items across diverse cartographic styles.
+\item Combined fine-tuned LayoutLMv3 with GPT-4o structured prompting for layout-aware legend parsing in the \textbf{DIGMAPPER} map-digitization pipeline.
+\item Achieved \textbf{96\%} symbol-detection F1, \textbf{97.8\%} text-detection F1, and \textbf{97.1\%} symbol–description linking accuracy.
+\end{itemize}
+
+{\bf Undergraduate Researcher}, \textit{Lomonosov Moscow State University, Moscow, Russia} \hfill 2019--2023
+
+\textit{Methods for Detecting Critical Events in System Log Data} \\
+\textit{Advisors: Oleg Gorokhov, Mikhail Petrovsky}  
+\begin{itemize}
+\item Developed NLP-inspired preprocessing and semantic extraction techniques for unstructured system logs.
+\item Built CNN-based anomaly detectors achieving \textbf{98\%} accuracy on processed logs and \textbf{82\%} on raw logs.
+\item Proposed process-mining-based clustering for modeling log-event sequences at scale.
+\end{itemize}
+
+\textit{Monte Carlo Algorithms for Connect6} \\
+\textit{Advisor: Olga Oparina}  
+\begin{itemize}
+\item Benchmarked heuristic algorithms for stochastic gameplay modeling and showed Monte Carlo methods outperform classical heuristics.
+\end{itemize}
+
+\end{rSection}
+%==================== PUBLICATIONS ====================%
+\begin{rSection}{Publications}
+
+\begin{enumerate}
+
+\item Weiwei Duan, Michael Gerlek, Steven Minton, Craig Knoblock, Fandel Lin, Theresa Chen, Leeje Jang, \textbf{Sofia Kirsanova}, Zekun Li, Yijun Lin, Yao-Yi Chiang.  
+\href{https://arxiv.org/abs/2506.16006}{\textit{DIGMAPPER: A Modular System for Automated Geologic Map Digitization}\ExternalLink}. arXiv:2506.16006, \textbf{2025}.
+
+\item \textbf{Sofia Kirsanova}, Weiwei Duan, Yao-Yi Chiang.  
+\href{https://doi.org/10.1145/3764920.3770590}{\textit{Detecting Legend Items on Historical Maps Using GPT-4o with In-Context Learning}\ExternalLink}. GeoSearch '25, ACM SIGSPATIAL Workshops, \textbf{2025}.
+
+\item Haoji Hu, Jina Kim, Jinwei Zhou, \textbf{Sofia Kirsanova}, Janghyeon Lee, Yao-Yi Chiang.  
+\href{https://doi.org/10.1145/3681765.3698465}{\textit{Context-aware Trajectory Anomaly Detection}\ExternalLink}. GeoAnomalies '24, ACM SIGSPATIAL Workshops, \textbf{2024}.
+
+\item \textbf{Sofia Kirsanova}. \textit{Detection of anomalies in system log data using process analytics methods}. Lomonosov Readings, \textbf{2023}.
+
+\item \textbf{Sofia Kirsanova}. \textit{Methods for detecting critical events in system log data}. Tikhonov Readings, \textbf{2022}.
+
+\item \textbf{Sofia Kirsanova}. \textit{Evaluation and Comparison of Algorithms for the Connect6 Game with Monte Carlo Method}. Journal of Moscow Polytechnic University Scientific Fair, \textbf{2020}.
+
+\end{enumerate}
+
+\end{rSection}
+
+%==================== CONFERENCE PRESENTATIONS ====================%
+\begin{rSection}{Conference Presentations}
+
+\begin{itemize}
+\item \textbf{Kirsanova, S.}, Duan, W., Chiang, Y.-Y. \textit{Detecting Legend Items on Historical Maps Using GPT-4o with In-Context Learning}. GeoSearch '25, ACM SIGSPATIAL Workshops, Nov \textbf{2025}.
+\item \textbf{Kirsanova, S.}, Duan, W., Chiang, Y.-Y. \textit{Detecting Legend Items on Historical Maps}. MN GIS/LIS Consortium Conference, Duluth, MN, Oct \textbf{2025}.
+\item \textbf{Kirsanova, S.}, Chiang, Y.-Y. \textit{Detecting Legend Items on Historical Maps}. Big Ten GIS Conference (BTAA GIN), Apr \textbf{2025}.
+\end{itemize}
+
+\end{rSection}
+%==================== WORK EXPERIENCE ====================%
+\begin{rSection}{Work Experience}
+
+{\bf Machine Learning Researcher}, \textit{Rotec Digital Solutions, Moscow, Russia} \hfill Sep 2023--Apr 2024  
+\begin{itemize}
+\item Developed ML models for anomaly detection in industrial sensor and time-series data for predictive maintenance.
+\item Integrated models into monitoring pipelines using PyTorch, scikit-learn, PostgreSQL, ClickHouse, MLflow, DVC, Airflow, Optuna.
+\end{itemize}
+
+{\bf Full-stack Java Developer}, \textit{MOLNET, Moscow, Russia} \hfill Apr 2022--Apr 2023  
+\begin{itemize}
+\item Implemented backend systems using Java, Spring, JSP, Maven, REST APIs, and PostgreSQL.
+\item Built web interfaces with React, TypeScript, Bootstrap; used Docker, Git, and Linux in daily development.
+\end{itemize}
+
+{\bf Freelance Writer}, \textit{JetBrains Academy (remote)} \hfill Jan 2022--Mar 2023  
+\begin{itemize}
+\item Authored educational modules on probability, statistics, data structures, and algorithms for online CS courses.
+\end{itemize}
+
+\end{rSection}
+
+
+
+%==================== SERVICE ====================%
+\begin{rSection}{Service}
+
+\textbf{Best Poster Committee}, Spring 2025 Data Science Poster Fair, University of Minnesota  \hfill 2025 
+
+\textbf{Jury Member}, All-Russian “Nauchnyj Avangard” Research Competition (CS section) \hfill 2024, 2025  
+
+\end{rSection}
+
+%==================== ADDITIONAL EXPERIENCE ====================%
+\begin{rSection}{Additional Experience}
+
+{\bf Graduate Teaching Assistant}, \textit{University of Minnesota Twin Cities} \hfill 2025--Present\\
+CSCI 2033: Elementary Linear Algebra (Fall 2025); CSCI 4801: Software Development Process (Spring 2026)
+
+\end{rSection}
+
+%==================== SKILLS ====================%
+\begin{rSection}{Skills}
+
+\textbf{Core ML \& CV:} Computer Vision, Document Image Analysis, Multimodal Learning, Vision Transformers, Layout Understanding, Structured Prediction, OCR/LLM-based Extraction
+
+\textbf{Machine Learning:} PyTorch, scikit-learn, CNNs, transformer models, training/evaluation pipelines
+
+\textbf{Programming:} Python, C, C++, Java, SQL
+
+\textbf{Languages:} Russian (native), English (fluent), German (beginner)
+\end{rSection}
+\end{document}
