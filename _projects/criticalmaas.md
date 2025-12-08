@@ -14,7 +14,9 @@ related_publications: true
 
 ## Overview
 
-CriticalMAAS developed automated methods for detecting and parsing legend information from historical maps, contributing to the DIGMAPPER map-digitization pipeline.
+CriticalMAAS (Critical Mineral Assessment with AI Support) was a collaborative effort between DARPA, USGS, ARPA-E, and other partners to develop machine-learning tools that accelerate time-consuming parts of USGS data interpretation and critical mineral assessments. The project aimed to reduce the critical mineral assessment workflow from years to days.
+
+As part of this effort, I developed automated methods for detecting and parsing legend information from historical maps, contributing to the DIGMAPPER map-digitization pipeline. This work was part of the first technical area: extracting geospatial data from maps and documents.
 
 ## Research Contributions
 
@@ -24,5 +26,7 @@ CriticalMAAS developed automated methods for detecting and parsing legend inform
 
 ## Impact
 
-This work contributed to the DIGMAPPER system, a modular framework for automated geologic map digitization, enabling large-scale processing of historical cartographic materials.
+This work contributed to the DIGMAPPER system, a modular framework for automated geologic map digitization. The CriticalMAAS effort successfully demonstrated the ability to reduce critical mineral assessment workflows from years to just two and a half days, enabling large-scale processing of historical cartographic materials for USGS scientists.
+
+**Reference:** [DARPA News: USGS, DARPA Collaborate To Accelerate Critical Mineral Assessment](https://www.darpa.mil/news/2025/usgs-ai-mineral-assessment)
 
