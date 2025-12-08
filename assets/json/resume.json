@@ -99,40 +99,46 @@
       "publisher": "arXiv preprint arXiv:2506.16006",
       "url": "https://arxiv.org/abs/2506.16006",
       "releaseDate": "2025-06-01",
-      "authors": "Weiwei Duan, Michael Gerlek, Steven Minton, Craig Knoblock, Fandel Lin, Theresa Chen, Leeje Jang, Sofia Kirsanova, Zekun Li, Yijun Lin, Yao-Yi Chiang"
+      "authors": "Weiwei Duan, Michael Gerlek, Steven Minton, Craig Knoblock, Fandel Lin, Theresa Chen, Leeje Jang, Sofia Kirsanova, Zekun Li, Yijun Lin, Yao-Yi Chiang",
+      "bibtex_key": "digmapper"
     },
     {
       "name": "Detecting Legend Items on Historical Maps Using GPT-4o with In-Context Learning",
       "publisher": "GeoSearch '25, ACM SIGSPATIAL Workshops",
       "url": "https://doi.org/10.1145/3764920.3770590",
       "releaseDate": "2025-11-01",
-      "authors": "Sofia Kirsanova, Weiwei Duan, Yao-Yi Chiang"
+      "authors": "Sofia Kirsanova, Weiwei Duan, Yao-Yi Chiang",
+      "bibtex_key": "geosearch2025"
     },
     {
       "name": "Context-Aware Trajectory Anomaly Detection",
       "publisher": "1st ACM SIGSPATIAL International Workshop on Geospatial Anomaly Detection (GeoAnomalies'24)",
       "url": "https://onspatial.github.io/GeoAnomalies24/files/paper_2.pdf",
       "releaseDate": "2024-09-30",
-      "authors": "Haoji Hu, Jina Kim, Jinwei Zhou, Sofia Kirsanova, Janghyeon Lee, Yao-Yi Chiang"
+      "authors": "Haoji Hu, Jina Kim, Jinwei Zhou, Sofia Kirsanova, Janghyeon Lee, Yao-Yi Chiang",
+      "bibtex_key": "haystac"
     },
     {
       "name": "Detection of Anomalies in System Log Data Using Process Analytics Methods",
       "publisher": "Scientific Conference \"Lomonosov Readings - 2023\"",
       "releaseDate": "2023-04-01",
-      "authors": "Oleg Gorokhov, Sofia Kirsanova"
+      "authors": "Oleg Gorokhov, Sofia Kirsanova",
+      "bibtex_key": "process_mining_lomonosov"
     },
     {
       "name": "Methods for Detecting Critical Events in System Log Data",
       "publisher": "Scientific Conference \"Tikhonov's Readings - 2022\"",
       "releaseDate": "2022-10-01",
-      "authors": "Oleg Gorokhov, Mikhail Petrovskiy, Igor Mashechkin, Sofia Kirsanova"
+      "authors": "Oleg Gorokhov, Mikhail Petrovskiy, Igor Mashechkin, Sofia Kirsanova",
+      "bibtex_key": "process_mining_tikhonov"
     },
     {
       "name": "Evaluation and Comparison of Algorithms for the Connect6 Game with Monte Carlo Method",
       "publisher": "Journal of the LXX Open international Student's Scientific Fair of Moscow Polytechnic University",
       "url": "https://snto.mospolytech.ru/files/Sbornik_SNK_2020_fin.pdf",
       "releaseDate": "2020-04-22",
-      "authors": "Sofia Kirsanova"
+      "authors": "Sofia Kirsanova",
+      "bibtex_key": "connect6"
     }
   ],
   "conferencePresentations": [
