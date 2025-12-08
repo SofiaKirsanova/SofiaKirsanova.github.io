@@ -7,3 +7,20 @@
 
 "Vision":
   color: "#009f36"
+
+"SIGSPATIAL":
+  url: https://sigspatial.org/
+  color: "#0076df"
+
+"MSU":
+  color: "#b509ac"
+
+"Polytech":
+  color: "#f29105"
+
+"MN GIS/LIS":
+  url: https://www.mngislis.org/
+  color: "#00ab37"
+
+"BTAA GIN":
+  color: "#2698ba"

@@ -40,9 +40,7 @@
       "name": "IMOLA: Automated Road Network Extraction & Topological Mapping",
       "summary": "sponsor: NSF<br>advisor: Dr. Yao-Yi Chiang<br>status: ongoing",
       "highlights": [
-        "Develop deep-learning methods for extracting road networks from maps, with a focus on detecting road centerlines, intersections, bridges, and other linear transportation features across varying cartographic styles",
-        "Build algorithms for topology reconstruction, converting raw line predictions into routable graph structures with nodes and edges classification and connectivity correction",
-        "Design evaluation pipelines to assess extraction quality across large heterogeneous map collections with patch difficulty modeling, structured error attribution, and cross-region generalization metrics"
+        "Developing deep-learning methods for extracting road networks from maps and building topology reconstruction algorithms"
       ],
       "startDate": "2024-09-01"
     },
@@ -50,9 +48,7 @@
       "name": "CriticalMAAS: Legend Detection & Map Layout Analysis",
       "summary": "sponsor: DARPA CriticalMAAS<br>advisor: Dr. Yao-Yi Chiang<br>status: completed",
       "highlights": [
-        "Developed deep-learning methods for detecting legend symbols and text regions and linking them into structured legend items across diverse cartographic styles",
-        "Combined fine-tuned LayoutLMv3 with GPT-4o structured prompting for layout-aware legend parsing in the DIGMAPPER map-digitization pipeline",
-        "Achieved 96% symbol-detection F1, 97.8% text-detection F1, and 97.1% symbol-description linking accuracy"
+        "Developed deep-learning methods for legend detection, achieving 96% symbol-detection F1 and 97.1% symbol-description linking accuracy"
       ],
       "startDate": "2024-09-10",
       "endDate": "2025-12-31"
