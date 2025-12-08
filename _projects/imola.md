@@ -1,32 +1,54 @@
 ---
 layout: page
-title: IMOLA - Automated Road Network Extraction & Topological Mapping
-description: NSF-funded project on automated road network extraction from maps
-img: 
+title: IMOLA – Intelligent Map recOgnition LAb
+description: NSF-funded project building a national-scale historical road network database (US1884+) from USGS topographic maps
+img:
 importance: 1
 category: work
 related_publications: false
 ---
 
-**Sponsor:** NSF  
-**Advisor:** Dr. Yao-Yi Chiang  
-**Status:** Ongoing (2024-Present)
+**Sponsor:** National Science Foundation (NSF)  
+**Co-PIs:** Dr. Yao-Yi Chiang (UMN), Dr. Stefan Leyk (CU Boulder)  
+**Status:** Ongoing (2024–2027)
 
 ## Overview
 
-IMOLA (Intelligent Map Object Line Analysis) is an NSF-funded project focused on developing automated methods for extracting road networks from maps and converting them into routable graph structures. This project addresses the critical challenge of digitizing transportation infrastructure from diverse cartographic sources, enabling large-scale analysis of historical and contemporary map collections.
+IMOLA (Intelligent Map recOgnition LAb) is a large-scale NSF project focused on extracting, digitizing, and analyzing historical U.S. road networks from **178,000+ USGS topographic map sheets (1884–2006)**.  
+The core goal is to build **US1884+**, a comprehensive spatiotemporal database of attributed road networks with uncertainty measures, enabling research across geography, history, urban development, demography, and environmental change.
 
-## Research Contributions
+By converting scanned maps into GIS-ready vector and raster layers, IMOLA unlocks historical landscape information that predates satellite imagery, supporting long-term studies of urbanization, infrastructure development, and population change.
 
-- **Deep-learning methods for road network extraction**: Developing state-of-the-art methods for detecting road centerlines, intersections, bridges, and other linear transportation features across varying cartographic styles, scales, and geographic regions
-- **Topology reconstruction algorithms**: Building robust algorithms to convert raw line predictions into routable graph structures with accurate node and edge classification, connectivity correction, and geometric refinement
-- **Evaluation pipelines**: Designing comprehensive evaluation pipelines to assess extraction quality across large heterogeneous map collections, including patch difficulty modeling, structured error attribution, and cross-region generalization metrics
+## Main Research Contributions
+
+- **US1884+ historical road network database**  
+  A national, multi-temporal dataset of vector and raster road layers with feature-level uncertainty for 120+ years of U.S. history.  
+- **DaVinci map processing system**  
+  Development of advanced computer vision capabilities (LCA, LDTR, contextual learning, multimodal knowledge fusion) for automatic line extraction with reduced manual annotation requirements.  
+- **Uncertainty modeling framework**  
+  Processing-, production-, and application-related uncertainty analysis for trustworthy spatiotemporal inference.  
+- **Case studies & community integration**  
+  Demonstrations connecting historical road networks with population change, land-use, settlement expansion, flooding risk, and environmental exposure research.
 
 ## Technical Approach
 
-The project combines advanced computer vision techniques (including vision transformers and multimodal learning) with graph-based methods to handle the complexity of map digitization. The approach ensures robust performance across different map styles, scales, and geographic regions, making it applicable to diverse cartographic materials from historical archives to modern digital maps.
+IMOLA integrates deep learning, contextual reasoning, and geospatial knowledge graphs:
+
+- Automatic training data generation using **Label Correction Algorithm (LCA)** for weakly supervised learning.
+- **LDTR (Linear Detection Transformer)** for high-connectivity line extraction and vector graph reconstruction.
+- Prior-knowledge fusion through **context-aware multimodal learning** and semantic spatial rules.
+- Scalable processing and dissemination through the **DaVinci** pipeline, Docker distribution, open data portals, and GIS tutorials.
+
+All outputs will be publicly accessible through the project website, Harvard Dataverse, and UMN U-Spatial.
 
 ## Impact
 
-IMOLA aims to enable large-scale digitization of transportation networks, supporting applications in urban planning, transportation analysis, historical research, and geospatial intelligence. The automated extraction methods significantly reduce the time and effort required for manual digitization while maintaining high accuracy standards.
+IMOLA enables the first nationwide historical road network time series spanning 100+ years, supporting:
+
+- Urban growth and transportation evolution studies  
+- Demographic change modeling and historical settlement analysis  
+- Landscape & environmental research, hazards, and climate studies  
+- Long-term spatial data integration with census, land cover, and building datasets
+
+The project lowers barriers to using historical cartographic archives and establishes foundational infrastructure for large-scale spatiotemporal research across social, behavioral, environmental, and geospatial sciences.
 
