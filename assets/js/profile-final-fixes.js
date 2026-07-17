@@ -1,10 +1,11 @@
 $(document).ready(function(){
   var path=window.location.pathname;
+  var darpaWhiteLogo='https://www.darpa.mil/sites/default/files/gallery/2024-12/darpa-logo-white-619.png';
 
   if(!document.getElementById('profile-content-link-colors')){
     var style=document.createElement('style');
     style.id='profile-content-link-colors';
-    style.textContent='.news td a,.cv h6 a,.cv .item a,.cv .post-description a:not(.btn),.publications .title a,article p a,article li a{color:#00a6d6!important}.publications .abbr .badge a,.publications .btn,.cv .btn,.navbar a{color:inherit!important}';
+    style.textContent='.news td a,.news td a:visited,.news td a:hover,.news td a:focus,.news td a em,.cv h6 a,.cv .item a,.cv .post-description a:not(.btn),.publications .title a,article p a,article li a{color:#00a6d6!important}.publications .abbr .badge a,.publications .btn,.cv .btn,.navbar a{color:inherit!important}';
     document.head.appendChild(style);
   }
 
@@ -12,7 +13,14 @@ $(document).ready(function(){
     var row=$('.news table tr').filter(function(){return $(this).text().indexOf('Detecting Legend Items on Historical Maps Using GPT-4o with In-Context Learning')!==-1;}).first();
     if(row.length){
       row.find('td').html('Our paper <a href="https://doi.org/10.1145/3764920.3770590" target="_blank" rel="external nofollow noopener"><em>Detecting Legend Items on Historical Maps Using GPT-4o with In-Context Learning</em></a> was accepted to <a href="https://geosearch-workshop.github.io/geosearch2025/" target="_blank" rel="external nofollow noopener">GeoSearch@ACM SIGSPATIAL 2025</a>! I’ll be presenting this work at SIGSPATIAL in Minneapolis this November. See you there!');
+      row.find('a, a em').attr('style','color:#00a6d6!important');
     }
+  }
+
+  function fixDarpaLogo(width,height){
+    var img=$('img[alt="DARPA logo"]');
+    img.attr('src',darpaWhiteLogo).attr('style','width:'+width+'px;height:'+height+'px;object-fit:contain;display:block');
+    img.parent('a').attr('style','display:inline-flex;align-items:center;background:#243b64;padding:5px 8px;border-radius:5px');
   }
 
   if(path.indexOf('/cv/')===0){
@@ -23,7 +31,7 @@ $(document).ready(function(){
       if(text.indexOf('Completed')!==-1){badge.attr('style','background-color:#2e8b57!important;color:#fff!important;padding:.35rem .6rem!important');}
     });
 
-    $('img[alt="DARPA logo"]').attr('style','width:58px;height:34px;object-fit:contain;filter:brightness(0) invert(1);background:#243b64;padding:5px 8px;border-radius:5px');
+    fixDarpaLogo(58,34);
 
     var serviceLinks={
       'ACM SIGSPATIAL 2026 Applications Track':'https://sigspatial2026.sigspatial.org/applications-submission.html',
@@ -66,7 +74,7 @@ $(document).ready(function(){
       if(text.indexOf('Ongoing')!==-1){badge.attr('style','background-color:#d9a400!important;color:#1b1b1b!important;padding:.35rem .6rem!important');}
       if(text.indexOf('Completed')!==-1){badge.attr('style','background-color:#2e8b57!important;color:#fff!important;padding:.35rem .6rem!important');}
     });
-    $('img[alt="DARPA logo"]').attr('style','width:66px;height:36px;object-fit:contain;filter:brightness(0) invert(1);background:#243b64;padding:5px 8px;border-radius:5px');
+    fixDarpaLogo(66,36);
   }
 
   if(path.indexOf('/publications/')===0){
