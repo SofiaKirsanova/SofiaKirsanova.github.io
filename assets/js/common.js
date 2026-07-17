@@ -113,7 +113,13 @@ $(document).ready(function(){
 
     var title=$('.post-title').first();
     var pdfIcon=title.find('a[href="/assets/pdf/CV_FAANG.pdf"]');
-    if(pdfIcon.length){pdfIcon.attr('title','Resume (PDF)').attr('aria-label','Resume PDF');}
+    if(pdfIcon.length){pdfIcon.attr('href','https://docs.google.com/document/d/1_PbEPhMcy_ImRT284Wbx4m0WldGxpSvreag2lodb7f0/export?format=pdf').attr('title','Resume (PDF)').attr('aria-label','Resume PDF');}
+    var header=$('.post-header').first();
+    if(header.length){
+      var desc=header.find('.post-description');
+      if(desc.length===0){header.append('<p class="post-description"></p>');desc=header.find('.post-description');}
+      desc.html('This page presents my academic CV. The PDF icon above opens my industry-focused <a href="https://docs.google.com/document/d/1_PbEPhMcy_ImRT284Wbx4m0WldGxpSvreag2lodb7f0/export?format=pdf" target="_blank" rel="external nofollow noopener">resume</a>.');
+    }
   }
 
   if(path==='/projects/'||path==='/projects/index.html'){
