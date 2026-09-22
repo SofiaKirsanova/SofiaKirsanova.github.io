@@ -7,6 +7,6 @@ $(document).ready(function(){
   $('img[alt="DARPA logo"]').attr('src',darpaLogo);
 
   if(path.indexOf('/cv/')===0){
-    $('.post-description a').filter(function(){return $(this).text().indexOf('Industry Resume')!==-1;}).attr('href','/assets/pdf/kirsanova_resume.pdf');
+    $('.post-description a').filter(function(){return $(this).text().indexOf('Industry Resume')!==-1;}).attr('href','/assets/kirsanova_resume.pdf');
   }
 });
