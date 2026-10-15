@@ -216,14 +216,4 @@ $(document).ready(function(){
     );
   }
 
-  if(path.indexOf('/teaching/')===0){
-    document.title='teaching & mentoring | Sofia Kirsanova';
-    $('.post-title').first().text('teaching & mentoring');
-    $('a.nav-link[href="/teaching/"]').contents().filter(function(){return this.nodeType===3;}).first().replaceWith('teaching & mentoring ');
-    var mentoring=$('#mentoring');
-    if(mentoring.length){
-      mentoring.nextAll().remove();
-      mentoring.after('<p>I mentor undergraduate students interested in computer vision, geospatial AI, and map digitization.</p><p>Possible student tasks:</p><ul><li>prepare and check datasets;</li><li>run segmentation or line-extraction experiments;</li><li>evaluate and visualize model outputs;</li><li>reproduce a recent research paper.</li></ul><p>Python experience is expected. Prior research experience is helpful but not required.</p><p>Email <a href="mailto:kirsa002@umn.edu">kirsa002@umn.edu</a> with the subject <strong>Undergraduate Research Interest</strong>. Please include:</p><ul><li>a short introduction;</li><li>your resume or CV;</li><li>relevant coursework or projects;</li><li>your weekly availability.</li></ul>');
-    }
-  }
 });
