@@ -68,11 +68,13 @@ $(document).ready(function(){
         var t=$(this).text();
         return t.indexOf('FRIEDA: Benchmarking Multi-Step Cartographic Reasoning')!==-1 || t.indexOf('CSpotlight')!==-1 || t.indexOf('Frontiers of Generative AI')!==-1;
       }).remove();
-      tbl.prepend(
+      var historicalRows = (
         '<tr><th scope="row" style="width:20%">Aug 2026</th><td>I will present <em>TRASA: Topology-Preserving Road Network Extraction from Historical Topographic Maps</em> at the <a href="https://sites.google.com/umn.edu/frontiers/home" rel="external nofollow noopener" target="_blank">Frontiers of Generative AI &amp; Science Workshop</a> at the University of Minnesota.</td></tr>'+
         '<tr><th scope="row" style="width:20%">May 2026</th><td>I was featured in CSpotlight in the article <a href="https://cse.umn.edu/cs/news/cspotlight-mapping-past" rel="external nofollow noopener" target="_blank"><em>Mapping the Past</em></a>.</td></tr>'+
         '<tr><th scope="row" style="width:20%">Apr 2026</th><td>Our paper <a href="https://openreview.net/forum?id=QQCadccQqU" rel="external nofollow noopener" target="_blank"><em>FRIEDA: Benchmarking Multi-Step Cartographic Reasoning in Vision-Language Models</em></a> appeared at <a href="https://iclr.cc/virtual/2026/poster/10009592" rel="external nofollow noopener" target="_blank">ICLR 2026</a>.</td></tr>'
       );
+      var first2025 = tbl.find('th').filter(function(){return $(this).text().trim()==='Oct 01, 2025';}).first().closest('tr');
+      if(first2025.length){first2025.before(historicalRows);}else{tbl.append(historicalRows);}
 
       var legacyTitles=[
         'Detecting Legend Items on Historical Maps Using GPT-4o with In-Context Learning',
