@@ -6,48 +6,30 @@
 <h2>TRASA — Topology-Preserving Road Network Extraction</h2>
 <p>Pixel segmentation alone does not guarantee usable road networks. TRASA combines road-mask guidance with graph-based prediction and node-type supervision so the output represents roads as <strong>connected nodes and edges</strong>, including junctions.</p>
 <figure class="career-figure">
-<img src="/assets/img/trasa-pipeline.svg" alt="Conceptual TRASA method overview: scanned map, road and intersection guidance, LDTR with node types, connected graph" loading="lazy">
-<figcaption>TRASA method overview (schematic based on the <a href="https://github.com/knowledge-computing/TRASA#architecture" target="_blank" rel="noopener noreferrer">public architecture description</a>; not a model output or experimental result).</figcaption>
+<img src="/assets/img/trasa-pipeline.svg" alt="TRASA pipeline with a real USGS historical map input, mask guidance, graph model, and connected road graph" loading="lazy">
+<figcaption>Input map: USGS Yosemite quadrangle (1897), illustrative historical map excerpt. <a href="https://github.com/kylebarron/usgs-topo-tiler" target="_blank" rel="noopener noreferrer">Source</a>.</figcaption>
 </figure>
 
 <section class="career-featured-paper" aria-labelledby="trasa-paper-heading">
 <div class="career-featured-paper-content">
-<div class="career-paper-meta"><span class="career-kind">Published paper</span><span>ACM SIGSPATIAL 2026 · Applications Track</span></div>
+<div class="career-paper-meta"><span class="career-kind">Conference paper</span><span>ACM SIGSPATIAL 2026 · Applications Track</span></div>
 <h3 id="trasa-paper-heading"><a href="https://doi.org/10.1145/3841645.3843303" target="_blank" rel="noopener noreferrer">TRASA: Topology-Preserving Road Network Extraction from Historical Topographic Maps</a></h3>
 <p class="career-authors"><strong>Sofia Kirsanova</strong>, Zekun Li, Stefan Leyk, Craig A. Knoblock, and Yao-Yi Chiang</p>
 <p>The paper introduces mask-assisted graph reconstruction and endpoint/intermediate/intersection supervision to better preserve network connectivity on scanned topographic maps.</p>
 <div class="career-paper-actions">
-<a class="career-primary-link" href="https://doi.org/10.1145/3841645.3843303" target="_blank" rel="noopener noreferrer">Read published paper</a>
-<a href="https://drive.google.com/file/d/1yZMbHvhHstAI9vcKnPqeWuq-6qSPXqgA/view" target="_blank" rel="noopener noreferrer">Author preprint (PDF)</a><a href="https://github.com/knowledge-computing/TRASA" target="_blank" rel="noopener noreferrer">Source code</a>
-<a href="https://github.com/knowledge-computing/TRASA/blob/main/REPRODUCING.md" target="_blank" rel="noopener noreferrer">Reproduction guide</a>
-<a href="https://sigspatial2026.sigspatial.org/detailed-program.html" target="_blank" rel="noopener noreferrer">Conference program</a>
+<a class="career-primary-link" href="https://doi.org/10.1145/3841645.3843303" target="_blank" rel="noopener noreferrer">Paper</a>
+<a href="https://github.com/knowledge-computing/TRASA" target="_blank" rel="noopener noreferrer">Code</a>
 </div>
 </div>
 </section>
 
-<div class="career-method-grid">
-<div class="career-method-card"><h3>Prediction</h3><p>Uses road and junction probability guidance with a graph transformer to predict nodes and direct edges.</p></div>
-<div class="career-method-card"><h3>Structure</h3><p>Trains node classification for endpoint, intermediate, and intersection types, not just pixel overlap.</p></div>
-<div class="career-method-card"><h3>Benchmark</h3><p>Experiments cover multiple road symbols and map styles with corrected road-graph annotations.</p></div>
-<div class="career-method-card"><h3>Evaluation</h3><p>Measures road completeness and correctness along with intersection and graph connectivity quality.</p></div>
-</div>
-<p class="career-evidence-note"><strong>Reproducible research materials:</strong> <a href="https://github.com/knowledge-computing/TRASA/tree/main/datasets/trasa_ca24" target="_blank" rel="noopener noreferrer">dataset specification</a>, <a href="https://github.com/knowledge-computing/TRASA/tree/main/configs" target="_blank" rel="noopener noreferrer">training configurations</a>, and <a href="https://github.com/knowledge-computing/TRASA#evaluation-and-tables" target="_blank" rel="noopener noreferrer">evaluation protocol</a>.</p>
+
+
 </section>
 
-<section id="ovss" class="career-research-section">
-<h2>OVSS — Open-Vocabulary Semantic Segmentation</h2>
-<p><strong>Ongoing research within IMOLA.</strong> I am evaluating whether foundation and vision-language models can segment geographic features specified by a prompt, without training a separate classifier for each category. This work addresses the gap between natural-image pretraining and historical cartographic symbology.</p>
-<div class="career-method-grid">
-<div class="career-method-card"><h3>What to segment</h3><p>Roads, trails, railroads, rivers, contour lines, boundaries, water regions, buildings, and map elements.</p></div>
-<div class="career-method-card"><h3>Prompt strategies</h3><p>Compare short class labels, cartographic descriptions, appearance cues, and negative-aware prompts.</p></div>
-<div class="career-method-card"><h3>Models under study</h3><p>Compare training-free open-vocabulary segmentation with example-guided map-specific approaches.</p></div>
-<div class="career-method-card"><h3>What to measure</h3><p>mIoU, buffered overlap for thin lines, precision/recall, and failure modes across historical map styles.</p></div>
-</div>
-<div class="career-ovss-evidence">
-<div><span class="career-kind">Example prompts being evaluated</span><p><code>road</code> <code>road symbol on a topographic map</code> <code>road, not contour line or river</code></p></div>
-<div><span class="career-kind">Research stage</span><p>Initial benchmark and prompt comparisons are in progress. No final performance claims are reported here.</p></div>
-</div>
-<p class="career-evidence-note"><strong>Research starting points:</strong> <a href="https://arxiv.org/abs/2410.01768" target="_blank" rel="noopener noreferrer">SegEarth-OV (CVPR 2025)</a> · <a href="https://github.com/likyoo/SegEarth-OV" target="_blank" rel="noopener noreferrer">SegEarth-OV code</a> · <a href="https://arxiv.org/abs/2508.05501" target="_blank" rel="noopener noreferrer">SMOL-MapSeg (Show Me One Label)</a>.</p>
+<section id="ovss" class="career-research-section career-minor-workstream">
+<h2>Open-vocabulary segmentation</h2>
+<p>Another ongoing research direction within IMOLA is using vision-language models to segment map features from text prompts. I am comparing prompting strategies and segmentation approaches, with particular attention to thin lines and generalization across map styles. This work is exploratory; results are not yet published.</p>
 </section>
 
 <section class="career-research-section">
