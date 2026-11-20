@@ -62,36 +62,7 @@ $(document).ready(function(){
       if(research.length){research.html('My research focuses on geospatial AI, computer vision, document image analysis, and multimodal understanding of historical maps. I work on automated map digitization, with emphasis on legend extraction, line extraction, road network reconstruction, topology preservation, vision transformers, layout understanding, and open-vocabulary semantic segmentation of geographic features.');}
     }
 
-    var tbl=$('.news table').first();
-    if(tbl.length){
-      tbl.find('tr').filter(function(){
-        var t=$(this).text();
-        return t.indexOf('FRIEDA: Benchmarking Multi-Step Cartographic Reasoning')!==-1 || t.indexOf('CSpotlight')!==-1 || t.indexOf('Frontiers of Generative AI')!==-1;
-      }).remove();
-      var historicalRows = (
-        '<tr><th scope="row" style="width:20%">Aug 2026</th><td>I will present <em>TRASA: Topology-Preserving Road Network Extraction from Historical Topographic Maps</em> at the <a href="https://sites.google.com/umn.edu/frontiers/home" rel="external nofollow noopener" target="_blank">Frontiers of Generative AI &amp; Science Workshop</a> at the University of Minnesota.</td></tr>'+
-        '<tr><th scope="row" style="width:20%">May 2026</th><td>I was featured in CSpotlight in the article <a href="https://cse.umn.edu/cs/news/cspotlight-mapping-past" rel="external nofollow noopener" target="_blank"><em>Mapping the Past</em></a>.</td></tr>'+
-        '<tr><th scope="row" style="width:20%">Apr 2026</th><td>Our paper <a href="https://openreview.net/forum?id=QQCadccQqU" rel="external nofollow noopener" target="_blank"><em>FRIEDA: Benchmarking Multi-Step Cartographic Reasoning in Vision-Language Models</em></a> appeared at <a href="https://iclr.cc/virtual/2026/poster/10009592" rel="external nofollow noopener" target="_blank">ICLR 2026</a>.</td></tr>'
-      );
-      var first2025 = tbl.find('th').filter(function(){return $(this).text().trim()==='Oct 01, 2025';}).first().closest('tr');
-      if(first2025.length){first2025.before(historicalRows);}else{tbl.append(historicalRows);}
-
-      var legacyTitles=[
-        'Detecting Legend Items on Historical Maps Using GPT-4o with In-Context Learning',
-        'DIGMAPPER: A Modular System for Automated Geologic Map Digitization',
-        'Context-Aware Trajectory Anomaly Detection',
-        'Detecting Legend Items on Historical Maps'
-      ].sort(function(a,b){return b.length-a.length;});
-      tbl.find('td').each(function(){
-        var td=$(this);
-        td.html(td.html().replace(/“|”/g,''));
-        legacyTitles.forEach(function(title){
-          var anchors=td.find('a').filter(function(){return $(this).text().trim()===title;});
-          if(anchors.length){anchors.each(function(){if(!$(this).parent().is('em')){$(this).wrap('<em></em>');}});return;}
-          if(td.text().indexOf(title)!==-1 && td.find('em').filter(function(){return $(this).text().trim()===title;}).length===0){td.html(td.html().replace(title,'<em>'+title+'</em>'));}
-        });
-      });
-    }
+    // Homepage news is maintained in index.html (no dynamic re-insertion).
   }
 
   if(path.indexOf('/publications/')===0){
@@ -107,7 +78,7 @@ $(document).ready(function(){
       var frieda=publicationItem('frieda2026','ICLR','https://iclr.cc/virtual/2026/poster/10009592','#123b73','#fff','FRIEDA: Benchmarking Multi-Step Cartographic Reasoning in Vision-Language Models','https://openreview.net/forum?id=QQCadccQqU','Jihun Pyo, Yuxi Jiao, Daehan Jung, Zekun Li, Leeje Jang, <strong>Sofia Kirsanova</strong>, Jina Kim, Yijun Lin, Qian Liu, Jie Xie, Hooman Askari, Ning Xu, Muhao Chen, and Yao-Yi Chiang','<em>International Conference on Learning Representations (ICLR)</em>, 2026',friedaBib,'<a class="btn btn-sm z-depth-0" href="https://openreview.net/forum?id=QQCadccQqU" target="_blank" rel="external nofollow noopener">Paper</a>');
       var frontiers=publicationItem('frontiers2026','Frontiers','https://sites.google.com/umn.edu/frontiers/home','#00838f','#fff','TRASA: Topology-Preserving Road Network Extraction from Historical Topographic Maps','', '<strong>Sofia Kirsanova</strong>, Zekun Li, Stefan Leyk, Craig A. Knoblock, and Yao-Yi Chiang','<em>Frontiers of Generative AI &amp; Science Workshop</em>, University of Minnesota, Aug 2026<div class="periodical">Poster presentation</div>',frontiersBib,'');
 
-      pub.prepend('<h2 class="bibliography">2026</h2><ol class="bibliography">'+trasa+frieda+frontiers+'</ol>');
+      pub.prepend('<h2 class="bibliography">2026</h2><ol class="bibliography">'+trasa+frieda+'</ol>');
 
       var configs={
         digmapper:{label:'SIGSPATIAL',venue:'https://sigspatial2025.sigspatial.org/industry-accepted/',color:'#1565c0',text:'#fff',paper:'https://arxiv.org/abs/2506.16006'},
@@ -192,32 +163,5 @@ $(document).ready(function(){
     desc.html('<strong>Documents:</strong> <a class="btn btn-sm z-depth-0" href="'+academicCvUrl+'" target="_blank" rel="external nofollow noopener"><i class="fa-solid fa-file-lines"></i> Academic CV — Google Doc</a> <a class="btn btn-sm z-depth-0" href="'+resumeUrl+'" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Industry Resume — PDF</a>');
   }
 
-  if(path==='/projects/'||path==='/projects/index.html'){
-    $('.projects .card-title').filter(function(){return $(this).text().indexOf('TRASA')!==-1;}).closest('.col').remove();
-    $('a[href="/projects/imola/"]').find('.card-text').first().text('NSF project on extracting and reconstructing historical road networks from topographic maps.');
-    $('a[href="/projects/criticalmaas/"]').find('.card-text').first().text('DARPA project on automated legend extraction and map-layout understanding for geologic maps.');
-  }
-
-  if(path.indexOf('/projects/imola/')===0){
-    $('.post-description').text('NSF project on historical road-network extraction from topographic maps.');
-    $('article').html(
-      '<p class="d-flex align-items-center">'+sponsorLogo('NSF',nsfUrl,nsfLogo,42,'U.S. National Science Foundation')+statusBadge('Ongoing · 2024–2027','warning')+'</p>'+
-      '<h2>Overview</h2><p>IMOLA develops methods and data infrastructure for recovering historical U.S. road networks from scanned topographic maps.</p>'+
-      '<h2>My Role</h2><ul><li>Develop a topology-preserving road-network extraction method that combines graph-based line detection, segmentation guidance, and node-type classification.</li><li>Reconstruct routable road graphs and evaluate geometric and topological errors.</li></ul>'+
-      '<h2>Selected Outputs</h2><ul><li><a href="https://doi.org/10.1145/3841645.3843303" target="_blank" rel="noopener noreferrer"><strong>TRASA: Topology-Preserving Road Network Extraction from Historical Topographic Maps</strong></a>. ACM SIGSPATIAL 2026, Applications Track. <a href="https://github.com/knowledge-computing/TRASA" target="_blank" rel="noopener noreferrer">Code</a>.</li><li><a href="https://sites.google.com/umn.edu/frontiers/home" target="_blank" rel="external nofollow noopener">TRASA poster, Frontiers of Generative AI &amp; Science Workshop</a>, Aug 2026.</li></ul>'+
-      '<p>Collaborators: <a href="https://yaoyichi.github.io/" target="_blank">Dr. Yao-Yi Chiang</a>, <a href="https://zekun-li.github.io/" target="_blank">Dr. Zekun Li</a>, <a href="https://www.colorado.edu/geography/stefan-leyk-0" target="_blank">Dr. Stefan Leyk</a>, and <a href="https://www.isi.edu/directory/craig-knoblock/" target="_blank">Dr. Craig A. Knoblock</a>.</p>'
-    );
-  }
-
-  if(path.indexOf('/projects/criticalmaas/')===0){
-    $('.post-description').text('DARPA project on automated geologic-map digitization.');
-    $('article').html(
-      '<p class="d-flex align-items-center flex-wrap">'+sponsorLogo('DARPA',darpaUrl,darpaLogo,62,'Defense Advanced Research Projects Agency')+'<a class="mr-3" href="'+criticalmaasUrl+'" target="_blank" rel="external nofollow noopener">DARPA CriticalMAAS program</a>'+statusBadge('Completed · 2023–2025','success')+'</p>'+
-      '<h2>Overview</h2><p>CriticalMAAS developed AI tools to turn scanned geologic maps into structured, analysis-ready data.</p>'+
-      '<h2>My Role</h2><ul><li>Detected legend symbols and text and linked them into structured legend items.</li><li>Combined LayoutLMv3 with GPT-4o prompting for layout-aware legend parsing.</li></ul>'+
-      '<h2>Selected Publications</h2><ul><li><a href="https://arxiv.org/abs/2506.16006" target="_blank" rel="external nofollow noopener">DIGMAPPER: A Modular System for Automated Geologic Map Digitization</a>.</li><li><a href="https://doi.org/10.1145/3764920.3770590" target="_blank" rel="external nofollow noopener">Detecting Legend Items on Historical Maps Using GPT-4o with In-Context Learning</a>.</li></ul>'+
-      '<p>Work completed in the <a href="https://knowledge-computing.github.io/" target="_blank">Knowledge Computing Lab</a> with <a href="https://yaoyichi.github.io/" target="_blank">Dr. Yao-Yi Chiang</a> and collaborators.</p>'
-    );
-  }
-
+  // Project pages use their canonical HTML rather than runtime replacements.
 });
