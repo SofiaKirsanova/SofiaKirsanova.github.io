@@ -68,7 +68,7 @@ $(document).ready(function(){
   if(path.indexOf('/publications/')===0){
     var pub=$('.publications').first();
     if(pub.length){
-      pub.children('h2').filter(function(){return $(this).text().trim()==='2026';}).each(function(){var h=$(this),next=h.next('ol.bibliography');if(next.find('#trasa2026,#frieda2026,#frontiers2026').length){next.remove();h.remove();}});
+      // 2026 publications are included in the static HTML source.
 
       var trasaBib='@inproceedings{kirsanova2026trasa,\n  title = {TRASA: Topology-Preserving Road Network Extraction from Historical Topographic Maps},\n  author = {Kirsanova, Sofia and Li, Zekun and Leyk, Stefan and Knoblock, Craig A. and Chiang, Yao-Yi},\n  booktitle = {Proceedings of the 34th ACM International Conference on Advances in Geographic Information Systems},\n  year = {2026},\n  doi = {10.1145/3841645.3843303},\n  url = {https://doi.org/10.1145/3841645.3843303}\n}';
       var friedaBib='@inproceedings{pyo2026frieda,\n  title = {FRIEDA: Benchmarking Multi-Step Cartographic Reasoning in Vision-Language Models},\n  author = {Pyo, Jihun and Jiao, Yuxi and Jung, Daehan and Li, Zekun and Jang, Leeje and Kirsanova, Sofia and Kim, Jina and Lin, Yijun and Liu, Qian and Xie, Jie and Askari, Hooman and Xu, Ning and Chen, Muhao and Chiang, Yao-Yi},\n  booktitle = {International Conference on Learning Representations},\n  year = {2026},\n  url = {https://openreview.net/forum?id=QQCadccQqU}\n}';
@@ -78,7 +78,7 @@ $(document).ready(function(){
       var frieda=publicationItem('frieda2026','ICLR','https://iclr.cc/virtual/2026/poster/10009592','#123b73','#fff','FRIEDA: Benchmarking Multi-Step Cartographic Reasoning in Vision-Language Models','https://openreview.net/forum?id=QQCadccQqU','Jihun Pyo, Yuxi Jiao, Daehan Jung, Zekun Li, Leeje Jang, <strong>Sofia Kirsanova</strong>, Jina Kim, Yijun Lin, Qian Liu, Jie Xie, Hooman Askari, Ning Xu, Muhao Chen, and Yao-Yi Chiang','<em>International Conference on Learning Representations (ICLR)</em>, 2026',friedaBib,'<a class="btn btn-sm z-depth-0" href="https://openreview.net/forum?id=QQCadccQqU" target="_blank" rel="external nofollow noopener">Paper</a>');
       var frontiers=publicationItem('frontiers2026','Frontiers','https://sites.google.com/umn.edu/frontiers/home','#00838f','#fff','TRASA: Topology-Preserving Road Network Extraction from Historical Topographic Maps','', '<strong>Sofia Kirsanova</strong>, Zekun Li, Stefan Leyk, Craig A. Knoblock, and Yao-Yi Chiang','<em>Frontiers of Generative AI &amp; Science Workshop</em>, University of Minnesota, Aug 2026<div class="periodical">Poster presentation</div>',frontiersBib,'');
 
-      pub.prepend('<h2 class="bibliography">2026</h2><ol class="bibliography">'+trasa+frieda+'</ol>');
+      // No runtime bibliography replacement: preserve canonical entries and filters.
 
       var configs={
         digmapper:{label:'SIGSPATIAL',venue:'https://sigspatial2025.sigspatial.org/industry-accepted/',color:'#1565c0',text:'#fff',paper:'https://arxiv.org/abs/2506.16006'},
