@@ -5,20 +5,7 @@ $(document).ready(function(){
   var doiUrl='https://doi.org/10.1145/3841645.3843303';
   var codeUrl='https://github.com/knowledge-computing/TRASA';
 
-  if(path==='/'||path==='/index.html'){
-    var table=$('.news table').first();
-    if(table.length){
-      table.find('tr').filter(function(){
-        var t=$(this).text();
-        return t.indexOf(paperTitle)!==-1 && t.indexOf('accepted')!==-1 && t.indexOf('SIGSPATIAL 2026')!==-1;
-      }).remove();
-      var acceptanceRow = (
-        '<tr><th scope="row" style="width:20%">Aug 2026</th><td>Our paper <em>'+paperTitle+'</em> was accepted to the <a href="'+venueUrl+'" target="_blank" rel="external nofollow noopener">Applications Track of ACM SIGSPATIAL 2026</a>! The paper was presented in Riverside in November 2026.</td></tr>'
-      );
-      var firstAug = table.find('tr').filter(function(){return $(this).text().indexOf('Frontiers of Generative AI')!==-1;}).first();
-      if(firstAug.length){firstAug.before(acceptanceRow);}else{var first2025=table.find('th').filter(function(){return $(this).text().trim()==='Oct 01, 2025';}).first().closest('tr'); if(first2025.length){first2025.before(acceptanceRow);}else{table.append(acceptanceRow);}}
-    }
-  }
+  // TRASA appeared at SIGSPATIAL 2026; do not reinsert old acceptance announcements.
 
   if(path.indexOf('/publications/')===0){
     var item=$('#trasa2026');
