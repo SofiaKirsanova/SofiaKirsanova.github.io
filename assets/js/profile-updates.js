@@ -132,6 +132,10 @@ $(document).ready(function(){
           item.find('ul.items').html('<li><span class="item">Compared Monte Carlo and heuristic algorithms for Connect6.</span></li>');
         }
       });
+      var projectList=projectsCard.find('ul.list-group').first();
+      if(projectList.length && projectList.text().indexOf('Open-Vocabulary Semantic Segmentation')===-1){
+        projectList.prepend(cvItem('2026–Present','Open-Vocabulary Semantic Segmentation (OVSS)','Exploratory work on prompt-guided map feature segmentation, benchmark design, and thin-line localization.','/projects/ovss/'));
+      }
     }
 
     var awardsAnchor=$('#awards');
