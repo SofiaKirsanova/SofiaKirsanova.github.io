@@ -59,7 +59,7 @@ $(document).ready(function(){
       first.html(first.html().replace('second-year Ph.D. student','third-year Ph.D. student'));
       bio.find('p').filter(function(){return $(this).text().indexOf('My current work includes TRASA')!==-1;}).remove();
       var research=bio.find('p').eq(1);
-      if(research.length){research.html('My research focuses on geospatial AI, computer vision, document image analysis, and multimodal understanding of historical maps. I work on automated map digitization, with emphasis on legend extraction, line extraction, road network reconstruction, topology preservation, vision transformers, layout understanding, and open-vocabulary semantic segmentation of geographic features.');}
+      if(research.length){research.html('My research is in <strong>computer vision and machine learning</strong>, focused on understanding complex images and transforming visual information into structured representations. I work on multimodal learning, semantic segmentation, document layout analysis, and graph-based prediction. Historical maps are one of my main application domains, bringing together challenging visual patterns, text, and spatial relationships.');}
     }
 
     // Homepage news is maintained in index.html (no dynamic re-insertion).
