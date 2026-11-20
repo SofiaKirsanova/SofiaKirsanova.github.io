@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img" aria-labelledby="title desc">
+<title id="title">TRASA conceptual pipeline</title>
+<desc id="desc">A scanned map patch is combined with segmentation guidance, passed through a graph transformer with node-type classification, and converted to a connected road graph. Conceptual schematic, not an experiment result.</desc>
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3eedb"/><stop offset="1" stop-color="#e5dfca"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f5f9fc"/></linearGradient>
+  <pattern id="grain" width="23" height="19" patternUnits="userSpaceOnUse"><circle cx="3" cy="7" r=".6" fill="#5d736f" opacity=".26"/><circle cx="16" cy="13" r=".8" fill="#846b55" opacity=".23"/></pattern>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#7593a7"/></marker>
+  <clipPath id="mapclip"><rect x="34" y="100" width="221" height="206" rx="8"/></clipPath>
+</defs>
+<rect width="1100" height="390" fill="#f9fbfc"/>
+<g font-family="Inter, Arial, sans-serif">
+<text x="35" y="35" font-weight="700" font-size="20" fill="#233549">TRASA · from map pixels to road graphs</text>
+<text x="35" y="59" font-size="13" fill="#647689">Method overview · schematic, not model output</text>
+<g fill="url(#panel)" stroke="#d7e2e9" stroke-width="1.5"><rect x="19" y="81" width="251" height="267" rx="12"/><rect x="295" y="81" width="235" height="267" rx="12"/><rect x="556" y="81" width="243" height="267" rx="12"/><rect x="826" y="81" width="255" height="267" rx="12"/></g>
+<text x="37" y="107" font-size="13" fill="#29506b" font-weight="700">01 · RGB map patch</text>
+<g clip-path="url(#mapclip)">
+<rect x="34" y="116" width="221" height="191" fill="url(#paper)"/><rect x="34" y="116" width="221" height="191" fill="url(#grain)"/>
+<g stroke="#bc9a73" stroke-width="1.8" opacity=".75" fill="none">
+<path d="M19 138 Q60 118 78 145 T142 149 T220 143 T270 155"/>
+<path d="M13 155 Q58 138 81 162 T140 166 T222 160 T275 175"/>
+<path d="M16 176 Q59 159 83 183 T145 191 T222 181 T276 194"/>
+<path d="M12 201 Q69 187 102 211 T170 214 T281 212"/>
+<path d="M18 225 Q59 214 95 234 T180 232 T269 241"/>
+<path d="M20 251 Q66 236 100 262 T167 260 T267 271"/>
+</g>
+<path d="M48 297 Q80 264 103 250 T170 195 T242 149" fill="none" stroke="#c5746c" stroke-width="6" opacity=".85"/>
+<path d="M59 164 L112 190 L160 204 L221 264" fill="none" stroke="#a2524d" stroke-width="4.5" opacity=".85"/>
+<path d="M112 190 L90 125" fill="none" stroke="#cc8f7f" stroke-width="3"/>
+<path d="M160 204 L210 119" fill="none" stroke="#b66053" stroke-width="4"/>
+<path d="M49 244 Q73 215 97 220 T158 226" fill="none" stroke="#567b98" stroke-width="2.5" stroke-dasharray="6 4"/>
+</g>
+<text x="313" y="107" font-size="13" fill="#29506b" font-weight="700">02 · Mask guidance</text>
+<rect x="313" y="116" width="198" height="191" rx="7" fill="#e8f0f4"/>
+<path d="M329 284 Q355 254 382 244 T443 199 T496 137" stroke="#52b3a0" stroke-width="15" fill="none" opacity=".4" stroke-linecap="round"/>
+<path d="M329 284 Q355 254 382 244 T443 199 T496 137" stroke="#1c907c" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M339 161 L389 188 L448 212 L492 266" stroke="#439bbc" stroke-width="13" opacity=".27" fill="none" stroke-linecap="round"/>
+<path d="M339 161 L389 188 L448 212 L492 266" stroke="#317fab" stroke-width="3" fill="none" stroke-linecap="round"/>
+<circle cx="390" cy="188" r="8" fill="#faad55" opacity=".8"/><circle cx="448" cy="212" r="9" fill="#faad55" opacity=".75"/>
+<text x="314" y="332" font-size="12" fill="#647689">Road + intersection signals</text>
+<text x="575" y="107" font-size="13" fill="#29506b" font-weight="700">03 · Graph model</text>
+<g>
+<rect x="586" y="132" width="181" height="57" rx="9" fill="#ddecfa" stroke="#89b2d5"/>
+<text x="676" y="154" text-anchor="middle" font-size="15" font-weight="700" fill="#255a7d">LDTR</text><text x="676" y="174" text-anchor="middle" font-size="11" fill="#365b70">node + edge prediction</text>
+<path d="M676 190 L676 218" stroke="#7893aa" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="586" y="229" width="181" height="58" rx="9" fill="#e8f5ee" stroke="#9dcfb2"/>
+<text x="676" y="251" text-anchor="middle" font-size="15" font-weight="700" fill="#256e52">Node types</text><text x="676" y="271" text-anchor="middle" font-size="11" fill="#3e6b5a">end · intermediate · junction</text>
+</g>
+<text x="574" y="332" font-size="12" fill="#647689">Topology-aware supervision</text>
+<text x="844" y="107" font-size="13" fill="#29506b" font-weight="700">04 · Connected road graph</text>
+<rect x="844" y="116" width="218" height="191" rx="8" fill="#f0f5f7"/>
+<g stroke="#215b78" stroke-width="4" stroke-linejoin="round" fill="none">
+<path d="M856 285 L885 247 L929 216 L971 180 L1043 130"/>
+<path d="M863 166 L922 190 L971 212 L1047 268"/>
+<path d="M922 190 L888 134"/>
+<path d="M971 212 L1013 151"/>
+<path d="M885 247 L951 251 L1021 287"/>
+</g>
+<g fill="#2f8196" stroke="#fff" stroke-width="2">
+<circle cx="856" cy="285" r="5"/><circle cx="1043" cy="130" r="5"/><circle cx="1047" cy="268" r="5"/><circle cx="863" cy="166" r="5"/><circle cx="888" cy="134" r="5"/><circle cx="1021" cy="287" r="5"/>
+</g>
+<g fill="#ed9b4b" stroke="#fff" stroke-width="2">
+<circle cx="922" cy="190" r="7"/><circle cx="971" cy="212" r="7"/><circle cx="885" cy="247" r="7"/>
+</g>
+<text x="845" y="332" font-size="12" fill="#647689">Nodes, edges and intersections</text>
+<g stroke="#7593a7" stroke-width="2" marker-end="url(#arr)"><path d="M272 214 L292 214"/><path d="M532 214 L553 214"/><path d="M802 214 L823 214"/></g>
+</g>
+</svg>
