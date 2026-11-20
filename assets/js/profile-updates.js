@@ -132,10 +132,14 @@ $(document).ready(function(){
           item.find('ul.items').html('<li><span class="item">Compared Monte Carlo and heuristic algorithms for Connect6.</span></li>');
         }
       });
-      var projectList=projectsCard.find('ul.list-group').first();
-      if(projectList.length && projectList.text().indexOf('Open-Vocabulary Semantic Segmentation')===-1){
-        projectList.prepend(cvItem('2026–Present','Open-Vocabulary Semantic Segmentation (OVSS)','Exploratory work on prompt-guided map feature segmentation, benchmark design, and thin-line localization.','/projects/ovss/'));
-      }
+      projectsCard.find('li.list-group-item').each(function(){
+        var project=$(this);
+        if(project.text().indexOf('IMOLA: Automated Road Network Extraction')===-1 && project.text().indexOf('IMOLA: Automated Road Network Extraction &')===-1){return;}
+        var details=project.find('ul.items').first();
+        if(details.length && details.text().indexOf('Open-vocabulary semantic segmentation')===-1){
+          details.append('<li><span class="item">Open-vocabulary semantic segmentation (OVSS): evaluating prompt-based extraction of geographic features from diverse map styles (ongoing IMOLA work).</span></li>');
+        }
+      });
     }
 
     var awardsAnchor=$('#awards');
