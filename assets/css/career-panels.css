@@ -1,0 +1,46 @@
+/* Compact presentation and publication browsing; uses the site's existing light/dark text colors. */
+.career-switcher{display:flex;flex-wrap:wrap;gap:.35rem;border-bottom:1px solid rgba(128,128,128,.3);margin:.4rem 0 1.3rem}
+.career-tab{border:0;border-bottom:3px solid transparent;background:transparent;color:inherit;cursor:pointer;padding:.65rem 1rem;font-weight:600;font-size:1rem;opacity:.73}
+.career-tab:hover,.career-tab:focus{opacity:1;outline-offset:2px}
+.career-tab.is-active{opacity:1;border-bottom-color:var(--global-theme-color,#168ab2)}
+.career-pane[hidden],.career-conference-card[hidden],.career-filtered{display:none!important}
+.career-section-lede{color:inherit;opacity:.8;margin-bottom:.8rem;max-width:48rem;line-height:1.5}
+.career-filter-bar{display:flex;align-items:center;flex-wrap:wrap;gap:.45rem;margin:.5rem 0 1rem}
+.career-filter{border:1px solid rgba(128,128,128,.38);border-radius:999px;background:transparent;padding:.27rem .75rem;color:inherit;font-size:.86rem;cursor:pointer}
+.career-filter:hover,.career-filter:focus{border-color:var(--global-theme-color,#168ab2)}
+.career-filter.is-active{border-color:var(--global-theme-color,#168ab2);background:rgba(45,151,185,.12);font-weight:650}
+.career-kind{display:inline-block;border:1px solid rgba(128,128,128,.32);background:rgba(128,128,128,.1);border-radius:999px;padding:.15rem .56rem;font-size:.74rem;line-height:1.35;letter-spacing:.01em;font-weight:650;margin:0 .4rem .45rem 0;vertical-align:middle}
+.career-kind-conference{background:rgba(41,128,185,.12)}
+.career-kind-workshop{background:rgba(111,124,178,.13)}
+.career-kind-other{background:rgba(128,128,128,.09)}
+.career-search{margin:.7rem 0 1.2rem}
+.career-search input{max-width:100%;width:26rem}
+.publications ol.bibliography > li{padding-bottom:1.1rem;margin-bottom:.85rem;border-bottom:1px solid rgba(128,128,128,.17)}
+.career-conference-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem;margin:1.1rem 0 2rem}
+.career-conference-card,.career-project-card,.career-method-card{border:1px solid rgba(128,128,128,.23);border-radius:12px;padding:1rem 1.12rem;background:rgba(128,128,128,.035)}
+.career-conference-card{display:flex;flex-direction:column;gap:.45rem}
+.career-conference-card h3{font-size:1.03rem;font-weight:650;line-height:1.4;margin:.1rem 0}
+.career-conference-card p{opacity:.83;font-size:.9rem;line-height:1.5;margin:0}
+.career-card-top{display:flex;justify-content:space-between;align-items:center;gap:.7rem}
+.career-card-top .career-kind{margin:0}
+.career-date{opacity:.75;font-size:.8rem;white-space:nowrap}
+.career-card-links{margin-top:auto;display:flex;flex-wrap:wrap;gap:.8rem;padding-top:.4rem;font-size:.88rem}
+.career-project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.2rem 0}
+.career-project-card{color:inherit!important;display:flex;flex-direction:column;gap:.45rem;text-decoration:none!important}
+.career-project-card:hover,.career-method-card:hover{border-color:rgba(40,151,186,.6)}
+.career-project-card:hover{box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.career-project-card h2{font-size:1.12rem;font-weight:650;line-height:1.35;margin:.2rem 0}
+.career-project-card p{font-size:.91rem;line-height:1.55;opacity:.82;margin:.1rem 0 .5rem}
+.career-project-card .career-card-links{margin-top:auto}
+.career-project-intro{max-width:50rem;line-height:1.6}
+.career-project-intro p{line-height:1.65}
+.career-method-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin:1rem 0 1.25rem}
+.career-method-card h3{font-size:1rem;font-weight:650;margin:0 0 .35rem}
+.career-method-card p{font-size:.9rem;line-height:1.55;margin:0;opacity:.87}
+.career-action-links{display:flex;flex-wrap:wrap;gap:.65rem;margin:1rem 0}
+.career-action-links a{display:inline-block;border:1px solid rgba(128,128,128,.35);border-radius:7px;padding:.35rem .7rem;text-decoration:none!important;font-weight:600;font-size:.86rem}
+.career-inline-note{border-radius:999px;border:1px solid rgba(128,128,128,.3);padding:.1rem .4rem;font-size:.7rem;font-weight:600;margin-right:.35rem}
+.news table th{white-space:nowrap}
+.news table td{line-height:1.48}
+@media(max-width:850px){.career-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.career-conference-grid,.career-method-grid,.career-project-grid{grid-template-columns:1fr}.career-switcher{gap:0}.career-tab{flex:1 1 auto;padding:.6rem .7rem;font-size:.95rem}.news table th{white-space:normal}}
