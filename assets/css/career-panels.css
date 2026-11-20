@@ -44,3 +44,52 @@
 .news table td{line-height:1.48}
 @media(max-width:850px){.career-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.career-conference-grid,.career-method-grid,.career-project-grid{grid-template-columns:1fr}.career-switcher{gap:0}.career-tab{flex:1 1 auto;padding:.6rem .7rem;font-size:.95rem}.news table th{white-space:normal}}
+
+/* Research portfolio: distinguish evidence and published articles from short tags. */
+.career-project-grid-two{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.15rem}
+.career-project-rich{padding:0;overflow:hidden;gap:0;display:flex;flex-direction:column}
+.career-project-rich .career-project-image{display:block;background:#f4f7fa;line-height:0;border-bottom:1px solid rgba(128,128,128,.2)}
+.career-project-rich .career-project-image img{display:block;width:100%;height:196px;object-fit:contain}
+.career-project-rich>.career-card-top,.career-project-rich>h2,.career-project-rich>p,.career-project-rich>.career-card-links{margin-left:1.15rem;margin-right:1.15rem}
+.career-project-rich>.career-card-top{padding-top:.95rem;padding-bottom:.5rem}
+.career-project-rich>h2{font-size:1.3rem;margin-top:.1rem;margin-bottom:.45rem}
+.career-project-rich>h2 a{text-decoration:none}
+.career-project-rich>p{margin-bottom:.7rem}
+.career-project-rich>.career-card-links{padding-bottom:1.1rem;align-items:center}
+.career-project-proof{font-size:.85rem;opacity:.8}
+.career-project-meta{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center;font-size:.86rem;opacity:.86;margin:0 0 1.2rem}
+.career-project-meta .career-kind{opacity:1}
+.career-research-section{margin:1.9rem 0 2.1rem}
+.career-research-section>h2{font-size:1.37rem;line-height:1.36;margin:0 0 .65rem;font-weight:650}
+.career-research-section>p{line-height:1.65;max-width:50rem}
+.career-figure{margin:1rem 0 1.4rem;border:1px solid rgba(128,128,128,.25);border-radius:10px;overflow:hidden;background:#fff}
+.career-figure>a{display:block}
+.career-figure img{display:block;width:100%;height:auto;max-height:470px;object-fit:contain;margin:0 auto;background:#fff}
+.career-figure figcaption{padding:.55rem .85rem;font-size:.8rem;line-height:1.45;color:#536579;background:#f5f8fa;border-top:1px solid #e1e6ed}
+.career-figure figcaption a{color:#176d99}
+.career-featured-paper{border:1px solid rgba(128,128,128,.28);border-left:4px solid var(--global-theme-color,#168ab2);border-radius:10px;padding:1.25rem 1.35rem;background:rgba(128,128,128,.045);margin:1.3rem 0 1.4rem}
+.career-paper-meta{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;font-size:.81rem;opacity:.89;margin-bottom:.55rem}
+.career-paper-meta .career-kind{margin-bottom:0}
+.career-featured-paper h3{font-size:1.23rem;line-height:1.35;margin:.55rem 0 .5rem;font-weight:680}
+.career-featured-paper h3 a{text-decoration:none}
+.career-featured-paper h3 a:hover{text-decoration:underline}
+.career-featured-paper p{font-size:.91rem;line-height:1.58;max-width:49rem;margin-bottom:.8rem}
+.career-authors{font-size:.84rem!important;opacity:.84}
+.career-paper-actions{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem .9rem;margin-top:1rem}
+.career-paper-actions a{display:inline-flex;align-items:center;font-size:.86rem;font-weight:600;text-decoration:none!important;padding:.35rem 0;border-bottom:1px solid transparent}
+.career-paper-actions a:hover{border-bottom-color:currentColor}
+.career-paper-actions .career-primary-link{border:1px solid var(--global-theme-color,#168ab2);border-radius:6px;padding:.42rem .7rem}
+.career-paper-actions .career-primary-link:hover{background:rgba(50,160,190,.1)}
+.career-ovss-evidence{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:.5rem 0 1rem}
+.career-ovss-evidence>div{border:1px dashed rgba(128,128,128,.35);border-radius:9px;padding:.85rem 1rem}
+.career-ovss-evidence p{font-size:.88rem;line-height:1.5;margin:.5rem 0 0}
+.career-ovss-evidence code{display:inline-block;white-space:normal;margin:.1rem .15rem;padding:.12rem .3rem;border-radius:5px;background:rgba(128,128,128,.12);color:inherit}
+.career-evidence-note{font-size:.87rem;line-height:1.6;opacity:.91}
+.career-method-grid{margin:1rem 0}
+.career-method-card{background:rgba(128,128,128,.035)}
+@media(max-width:720px){
+.career-project-grid-two,.career-ovss-evidence{grid-template-columns:1fr}
+.career-project-rich .career-project-image img{height:175px}
+.career-featured-paper{padding:1rem}
+.career-featured-paper h3{font-size:1.1rem}
+}
