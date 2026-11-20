@@ -9,13 +9,7 @@ $(document).ready(function(){
     document.head.appendChild(style);
   }
 
-  if(path==='/'||path==='/index.html'){
-    var row=$('.news table tr').filter(function(){return $(this).text().indexOf('Detecting Legend Items on Historical Maps Using GPT-4o with In-Context Learning')!==-1;}).first();
-    if(row.length){
-      row.find('td').html('Our paper <a href="https://doi.org/10.1145/3764920.3770590" target="_blank" rel="external nofollow noopener"><em>Detecting Legend Items on Historical Maps Using GPT-4o with In-Context Learning</em></a> was accepted to <a href="https://geosearch-workshop.github.io/geosearch2025/" target="_blank" rel="external nofollow noopener">GeoSearch@ACM SIGSPATIAL 2025</a>! I’ll be presenting this work at SIGSPATIAL in Minneapolis this November. See you there!');
-      row.find('a, a em').attr('style','color:#00a6d6!important');
-    }
-  }
+  // Old GeoSearch announcement is no longer rewritten on each page load.
 
   function fixDarpaLogo(width,height){
     var img=$('img[alt="DARPA logo"]');
